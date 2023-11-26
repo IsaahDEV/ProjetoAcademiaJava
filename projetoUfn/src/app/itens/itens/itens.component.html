@@ -1,0 +1,25 @@
+<table mat-table [dataSource]="itens" class="mat-elevation-z8">
+
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="codigo">
+    <th mat-header-cell *matHeaderCellDef> Codigo </th>
+    <td mat-cell *matCellDef="let item"> {{item.codigo}} </td>
+  </ng-container>
+
+  <!-- Código Column -->
+  <ng-container matColumnDef="nome">
+    <th mat-header-cell *matHeaderCellDef> Nome </th>
+    <td mat-cell *matCellDef="let item"> {{item.nome}} </td>
+  </ng-container>
+
+  <!-- Preco Column -->
+  <ng-container matColumnDef="quantidade">
+    <th mat-header-cell *matHeaderCellDef> quantidade </th>
+    <td mat-cell *matCellDef="let item"> {{item.quantidade}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
