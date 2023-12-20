@@ -1,0 +1,12 @@
+[
+  { "_id": "1", "codigo": 100230, "nome": "Fita", "preco": 10.50, "quantidade": 10, "solicitacoes": [] },
+  { "_id": "2", "codigo": 100231, "nome": "Caneta", "preco": 2.00, "quantidade": 20, "solicitacoes": [] },
+  { "_id": "3", "codigo": 100232, "nome": "Caderno", "preco": 15.75, "quantidade": 5, "solicitacoes": [] },
+  { "_id": "4", "codigo": 100233, "nome": "Lápis", "preco": 1.50, "quantidade": 30, "solicitacoes": [] },
+  { "_id": "5", "codigo": 100234, "nome": "Borracha", "preco": 1.00, "quantidade": 25, "solicitacoes": [] },
+  { "_id": "6", "codigo": 100235, "nome": "Régua", "preco": 3.50, "quantidade": 15, "solicitacoes": [] },
+  { "_id": "7", "codigo": 100236, "nome": "Papel A4", "preco": 8.75, "quantidade": 12, "solicitacoes": [] },
+  { "_id": "8", "codigo": 100237, "nome": "Cola", "preco": 4.25, "quantidade": 8, "solicitacoes": [] },
+  { "_id": "9", "codigo": 100238, "nome": "Tesoura", "preco": 5.75, "quantidade": 7, "solicitacoes": [] },
+  { "_id": "10", "codigo": 100239, "nome": "Marcador", "preco": 3.00, "quantidade": 18, "solicitacoes": [] }
+]

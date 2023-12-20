@@ -1,1 +1,39 @@
-<p>solicitacoes works!</p>
+<mat-card>
+  <mat-card-content>
+
+    <mat-toolbar color="primary">Solicitações Abertas</mat-toolbar>
+
+    <table mat-table [dataSource]="solicitacoes" class="mat-elevation-z8">
+    <!-- solicitação Column -->
+    <ng-container matColumnDef="solicitante">
+    <th mat-header-cell *matHeaderCellDef>Solicitante</th>
+    <td mat-cell *matCellDef="let solicitacao">
+      {{ solicitacao.solicitante }}
+    </td>
+    </ng-container>
+
+  <!-- setor Column -->
+    <ng-container matColumnDef="setor">
+    <th mat-header-cell *matHeaderCellDef>Setor</th>
+    <td mat-cell *matCellDef="let solicitacao">{{ solicitacao.setor }}</td>
+    </ng-container>
+
+    <!-- data de solicitação Column -->
+    <ng-container matColumnDef="dataSolicitacao">
+    <th mat-header-cell *matHeaderCellDef>Data De Solicitação</th>
+    <td mat-cell *matCellDef="let solicitacao">
+      {{ solicitacao.dataSolicitacao }}
+    </td>
+    </ng-container>
+
+    <!-- status Column -->
+    <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef>Status</th>
+    <td mat-cell *matCellDef="let solicitacao">{{ solicitacao.status }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  </mat-card-content>
+  </mat-card>

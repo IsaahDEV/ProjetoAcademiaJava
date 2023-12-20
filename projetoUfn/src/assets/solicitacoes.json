@@ -1,0 +1,102 @@
+[
+  {
+    "_id": "5656",
+    "solicitante": "Igor Vinicius",
+    "setor": "Tecnologia",
+    "quantidade": 1,
+    "centroCusto": 10402,
+    "dataSolicitacao": "26/11/2023",
+    "status": "Pendente",
+    "codigoItem": [100230]
+  },
+  {
+    "_id": "5657",
+    "solicitante": "Maria Silva",
+    "setor": "Recursos Humanos",
+    "quantidade": 2,
+    "centroCusto": 10403,
+    "dataSolicitacao": "27/11/2023",
+    "status": "Aprovado",
+    "codigoItem": [100231, 100235]
+  },
+  {
+    "_id": "5658",
+    "solicitante": "João Oliveira",
+    "setor": "Logística",
+    "quantidade": 5,
+    "centroCusto": 10404,
+    "dataSolicitacao": "28/11/2023",
+    "status": "Rejeitado",
+    "codigoItem": [100234, 100238, 100239]
+  },
+  {
+    "_id": "5659",
+    "solicitante": "Ana Souza",
+    "setor": "Marketing",
+    "quantidade": 3,
+    "centroCusto": 10405,
+    "dataSolicitacao": "29/11/2023",
+    "status": "Pendente",
+    "codigoItem": [100232, 100237]
+  },
+  {
+    "_id": "5660",
+    "solicitante": "Lucas Santos",
+    "setor": "Financeiro",
+    "quantidade": 2,
+    "centroCusto": 10406,
+    "dataSolicitacao": "30/11/2023",
+    "status": "Aprovado",
+    "codigoItem": [100233, 100236]
+  },
+  {
+    "_id": "5661",
+    "solicitante": "Mariana Lima",
+    "setor": "Vendas",
+    "quantidade": 4,
+    "centroCusto": 10407,
+    "dataSolicitacao": "01/12/2023",
+    "status": "Pendente",
+    "codigoItem": [100230, 100235, 100237]
+  },
+  {
+    "_id": "5662",
+    "solicitante": "Rafaela Oliveira",
+    "setor": "Atendimento ao Cliente",
+    "quantidade": 1,
+    "centroCusto": 10408,
+    "dataSolicitacao": "02/12/2023",
+    "status": "Aprovado",
+    "codigoItem": [100234]
+  },
+  {
+    "_id": "5663",
+    "solicitante": "Pedro Costa",
+    "setor": "Produção",
+    "quantidade": 3,
+    "centroCusto": 10409,
+    "dataSolicitacao": "03/12/2023",
+    "status": "Rejeitado",
+    "codigoItem": [100236, 100238, 100239]
+  },
+  {
+    "_id": "5664",
+    "solicitante": "Isabela Almeida",
+    "setor": "Qualidade",
+    "quantidade": 2,
+    "centroCusto": 10410,
+    "dataSolicitacao": "04/12/2023",
+    "status": "Pendente",
+    "codigoItem": [100232, 100237]
+  },
+  {
+    "_id": "5665",
+    "solicitante": "Diego Oliveira",
+    "setor": "Recursos Humanos",
+    "quantidade": 1,
+    "centroCusto": 10411,
+    "dataSolicitacao": "05/12/2023",
+    "status": "Aprovado",
+    "codigoItem": [100231]
+  }
+]

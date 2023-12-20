@@ -4,6 +4,4 @@ export interface Itens {
   codigo: number;
   preco: number;
   quantidade: number;
-  solicitacoes: any[];
-
 }
