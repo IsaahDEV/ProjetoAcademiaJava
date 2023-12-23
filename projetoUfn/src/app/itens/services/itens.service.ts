@@ -9,7 +9,7 @@ import { first, take, tap } from 'rxjs/operators';
 })
 export class ItensService {
 
-  private readonly API = '/assets/itens.json';
+  private readonly API = 'http://localhost:8080/api/itens';
 
   constructor(private  httpClient: HttpClient) { }
 

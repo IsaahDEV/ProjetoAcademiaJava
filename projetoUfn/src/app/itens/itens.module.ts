@@ -7,10 +7,14 @@ import { SharedModule } from '../shared/shared.module';
 import { ItensRoutingModule } from './itens-routing.module';
 import { ItensComponent } from './itens/itens.component';
 import { ItensService } from './services/itens.service';
+import {MatIconModule} from '@angular/material/icon';
+import { ItensFormComponent } from './itens-form/itens-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     ItensComponent,
+
 
   ],
 
@@ -19,7 +23,9 @@ import { ItensService } from './services/itens.service';
     ItensRoutingModule,
     AppMaterialModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    MatIconModule,
+    ReactiveFormsModule
 
   ],
 
