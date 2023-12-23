@@ -9,7 +9,7 @@ import { ItensComponent } from './itens/itens.component';
 import { ItensService } from './services/itens.service';
 import {MatIconModule} from '@angular/material/icon';
 import { ItensFormComponent } from './itens-form/itens-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     SharedModule,
     MatIconModule,
-    ReactiveFormsModule
+
 
   ],
 

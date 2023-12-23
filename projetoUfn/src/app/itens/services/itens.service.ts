@@ -21,4 +21,7 @@ export class ItensService {
     );
 
   }
+  save(record: Itens){
+    return this.httpClient.post<Itens>(this.API, record).pipe(first());
+  }
 }
