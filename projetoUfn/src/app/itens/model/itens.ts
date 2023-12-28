@@ -1,5 +1,5 @@
 export interface Itens {
-  _id: string;
+  id: string;
   nome: string;
   codigo: number;
   preco: number;

@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ItensComponent } from './itens/itens.component';
-import { ItensFormComponent } from './itens-form/itens-form.component';
+import { Router, RouterModule, Routes, } from '@angular/router';
+import { ItensComponent } from './conteiners/itens/itens.component';
+import { ItensFormComponent } from './conteiners/itens-form/itens-form.component';
+import { Itens } from './model/itens';
 
 const routes: Routes = [
   { path:'', component: ItensComponent },
-  { path:'new', component: ItensFormComponent }
+  { path:'novo', component: ItensFormComponent },
+  { path:'editar/:id', component: ItensFormComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-content>
+  <mat-toolbar color="primary">Itens cadastrados</mat-toolbar>
+    <app-itens-list  *ngIf="itens$ | async as itens"
+    [itens]="itens"
+    (add)="onAdd()"
+    (delete)="onDelete($event)"
+    ></app-itens-list>
+</mat-card-content>
+</mat-card>
