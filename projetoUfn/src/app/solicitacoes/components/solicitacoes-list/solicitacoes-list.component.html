@@ -1,0 +1,55 @@
+<table mat-table [dataSource]="solicitacoes" class="mat-elevation-z8">
+
+  <!-- Coluna Solicitante -->
+  <ng-container matColumnDef="solicitante">
+    <th mat-header-cell *matHeaderCellDef> Solicitante </th>
+    <td mat-cell *matCellDef="let solicitacao"> {{solicitacao.solicitante}} </td>
+  </ng-container>
+
+  <!-- Coluna Setor -->
+  <ng-container matColumnDef="setor">
+    <th mat-header-cell *matHeaderCellDef> Setor </th>
+    <td mat-cell *matCellDef="let solicitacao"> {{solicitacao.setor}} </td>
+  </ng-container>
+
+  <!-- Coluna Data Solicitacao -->
+  <ng-container matColumnDef="dataSolicitacao">
+    <th mat-header-cell *matHeaderCellDef> Data Solicitação </th>
+    <td mat-cell *matCellDef="let solicitacao"> {{solicitacao.dataSolicitacao}} </td>
+  </ng-container>
+
+  <!-- Coluna Status Solicitação -->
+  <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef> Status </th>
+    <td mat-cell *matCellDef="let solicitacao"> {{solicitacao.status}} </td>
+  </ng-container>
+   <!-- Coluna Acoes -->
+   <ng-container matColumnDef="acoes" class="flex">
+    <th mat-header-cell *matHeaderCellDef class="coluna-acao">
+      <button
+        mat-mini-fab
+        color="primary"
+        aria-label="Botão adicionar"
+        (click)="onAdd()"
+      >
+        <mat-icon>add</mat-icon>
+      </button>
+    </th>
+    <td mat-cell *matCellDef="let solicitacao" class="coluna-acao">
+      <button
+        mat-icon-button
+        color="accent"
+        aria-label="Botão editar"
+        (click)="onEdit(solicitacao.id)"
+      >
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" aria-label="Botão editar" (click)="onDelete(solicitacao)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

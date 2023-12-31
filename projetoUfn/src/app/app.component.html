@@ -1,4 +1,19 @@
-  <mat-toolbar>
-    <span>Bem vindo ao App</span>
-  </mat-toolbar>
-  <router-outlet></router-outlet>
+<mat-toolbar>
+  <span>Bem vindo ao App</span>
+  <div>
+  <button mat-button
+          (click)="navItens()"
+          aria-label="Show tooltip on the button at the end of this section"
+          class="example-action-button">
+    Item
+  </button>
+  <button mat-button
+          (click)="navSolicitacoes()"
+          aria-label="Hide tooltip on the button at the end of this section"
+          class="example-action-button">
+    Solicitações
+  </button>
+</div>
+
+</mat-toolbar>
+<router-outlet></router-outlet>

@@ -51,12 +51,9 @@ public class ItensController {
     public ResponseEntity<Void> delete(@PathVariable Long id){
         return itensRepository.findById(id)
                 .map(recordFound -> {
-                   itensRepository.deleteById(id);
+                    itensRepository.deleteById(id);
                     return ResponseEntity.noContent().<Void>build();
                 })
                 .orElse(ResponseEntity.notFound().build());
     }
 }
-
-
-

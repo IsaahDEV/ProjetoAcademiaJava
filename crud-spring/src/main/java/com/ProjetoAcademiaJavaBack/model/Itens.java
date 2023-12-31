@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 
 @Data
 @Entity
@@ -25,8 +27,6 @@ public class Itens {
 
     @Column(length = 10, nullable = false)
     private  int quantidade;
-
-
     public Long getId() {
         return id;
     }
