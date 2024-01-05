@@ -1,14 +1,13 @@
-<mat-card class="mat-card">
+<mat-card >
   <mat-card-content class="column-flex">
 
-    <mat-toolbar class="tobar">
-      <h2>Solicitações Abertas</h2>
-    </mat-toolbar>
+    <mat-toolbar color="primary">Solicitações Abertas</mat-toolbar>
 
-    <app-solicitacoes-list
+    <app-solicitacoes-list *ngIf="solicitacao$ | async as Solicitacao"
+    [solicitacao]="Solicitacao"
     (add)="onAdd()"
-    >
-    </app-solicitacoes-list>
+    (delete)="onDelete($event)"
+    ></app-solicitacoes-list>
 
   </mat-card-content>
 </mat-card>

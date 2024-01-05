@@ -7,7 +7,7 @@ import { SolicitacaoFormComponent } from './containers/solicitacoes-form/solicit
 const routes: Routes = [
   { path: '', component: SolicitacoesComponent },
   {path: 'nova-solicitacao', component: SolicitacaoFormComponent},
-  {path: 'editar-solicitacao/:id', component: SolicitacoesComponent},
+  {path: 'editar-solicitacao/:id', component: SolicitacaoFormComponent},
 ];
 
 @NgModule({

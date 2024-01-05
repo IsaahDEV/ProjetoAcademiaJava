@@ -6,19 +6,16 @@ import { catchError, of } from 'rxjs';
 import { Observable } from 'rxjs/internal/Observable';
 
 import { AppMaterialModule } from '../../../shared/app-material/app-material.module';
-import { ErrorDialogComponent } from '../../../shared/components/error-dialog/error-dialog.component';
+import { ItensListComponent } from '../../components/itens-list/itens-list.component';
 import { Itens } from '../../model/itens';
 import { ItensService } from '../../services/itens.service';
-import { ItensListComponent } from '../../components/itens-list/itens-list.component';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { error } from 'console';
 
 
 @Component({
   selector: 'app-itens',
   standalone: true,
   imports:[CommonModule, AppMaterialModule, ItensListComponent],
-  templateUrl: './itens.component.html',
+  templateUrl:'./itens.component.html',
   styleUrls: ['./itens.component.css']
 })
 export class ItensComponent implements OnInit{

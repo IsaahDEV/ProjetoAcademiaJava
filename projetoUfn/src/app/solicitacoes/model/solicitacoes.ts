@@ -6,7 +6,7 @@ export interface Solicitacao{
   centroCusto: number;
   dataSolicitacao: string;
   status: string;
-  codigosItens: number;
+  Codigoitem: number;
 
 
 }

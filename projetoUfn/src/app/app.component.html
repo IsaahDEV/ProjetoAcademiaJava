@@ -1,16 +1,17 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
   <span>Bem vindo ao App</span>
-  <div>
-  <button mat-button
+  <div class="example-spacer ">
+  <button mat-flat-button target="_blank"
           (click)="navItens()"
           aria-label="Show tooltip on the button at the end of this section"
-          class="example-action-button">
+          class="example-spacer" color="primary">
     Item
   </button>
-  <button mat-button
+  <button  mat-flat-button target="_blank"
           (click)="navSolicitacoes()"
           aria-label="Hide tooltip on the button at the end of this section"
-          class="example-action-button">
+          class="example-spacer"
+          color="primary">
     Solicitações
   </button>
 </div>

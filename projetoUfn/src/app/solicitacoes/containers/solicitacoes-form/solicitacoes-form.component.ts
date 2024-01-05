@@ -33,7 +33,7 @@ export class SolicitacaoFormComponent implements OnInit {
       centroCusto: [''],
       dataSolicitacao: [''],
       status: [''],
-      codigosItens: [''],
+      Codigoitem: [''],
     });
   }
 
@@ -61,7 +61,7 @@ export class SolicitacaoFormComponent implements OnInit {
       centroCusto: solicitacao.centroCusto,
       dataSolicitacao: solicitacao.dataSolicitacao,
       status: solicitacao.status,
-      codigosItens: solicitacao.codigosItens,
+      Codigoitem: solicitacao.Codigoitem,
     });
   }
 

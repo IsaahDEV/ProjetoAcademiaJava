@@ -1,9 +1,10 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Solicitacao } from '../../model/solicitacoes';
 import { SolicitacoesService } from '../../services/solicitacoes.service';
 import { Observable } from 'rxjs';
 import { AppMaterialModule } from '../../../shared/app-material/app-material.module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-solicitacoes-list',
@@ -14,24 +15,26 @@ import { AppMaterialModule } from '../../../shared/app-material/app-material.mod
 })
 export class ListaSolicitacoesComponent {
 
-  solicitacoes: Observable<Solicitacao[]>;
+  @Input() solicitacao: Solicitacao[] = [];
   @Output() add = new EventEmitter(false);
+  @Output() delete = new EventEmitter(false);
 
 
   displayedColumns = ['solicitante', 'setor', 'dataSolicitacao', 'status', 'acoes'];
 
-  constructor(private solicitacoesService: SolicitacoesService) {
-    this.solicitacoes = this.solicitacoesService.list();
+  constructor( private route: Router){
+
   }
 
-  onAdd(){
+   public onAdd(){
     this.add.emit(true)
   }
-  onEdit(id: string){
 
+   public onEdit(id: string){
+    this.route.navigate(['solicitacoes/editar-solicitacao/', id])
   }
 
-  onDelete(solicitacao: Solicitacao){
-
+  public onDelete(solicitacao: Solicitacao){
+    this.delete.emit(solicitacao);
   }
 }
